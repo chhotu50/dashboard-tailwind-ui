@@ -33,13 +33,22 @@ body {
 }
 
 .nav-position{
-  // position: absolute;
-  // margin: 0;
-  // top: 110%;
-  // margin-left: -11%;
   position: absolute;
   inset: 0px 0px auto auto;
   margin: 0px;
   transform: translate(-16px, 38px);
+  top: 45%;
+  &::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    transform: rotate(45deg);
+    border-top: 1px solid #eaedf1;
+    border-left: 1px solid #eaedf1;
+}
 }
 
