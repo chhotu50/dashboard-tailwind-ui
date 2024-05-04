@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.nav-position{
+  // position: absolute;
+  // margin: 0;
+  // top: 110%;
+  // margin-left: -11%;
+  position: absolute;
+  inset: 0px 0px auto auto;
+  margin: 0px;
+  transform: translate(-16px, 38px);
+}
+
