@@ -1,31 +1,29 @@
 import React from "react";
 import { Icon } from "../icon";
+import Link from "next/link";
+import { RoutesEnum } from "../utils/enums/routes.enum";
 const LILists = [
-  { title: "Dashboard", icon: "HouseFill", url: "", subLink: [] },
+  { title: "Dashboard", icon: "HouseFill", url: RoutesEnum.DASHBOARD, subLink: [] },
   {
-    title: "E-commerce",
+    title: "Product",
     icon: "CartFill",
-    url: "",
+    url: "/",
     subLink: [
-      { title: "Dashboard", url: "" },
-      { title: "Dashboard", url: "" },
+      { title: "All Product", url: RoutesEnum.PRODUCT },
     ],
   },
   {
     title: "Students",
     icon: "PeopleFill",
-    url: "",
+    url: "/",
     subLink: [
-      { title: "All Students", url: "" },
-      { title: "Students Details", url: "" },
-      { title: "Admission Form", url: "" },
-      { title: "Student Promotion", url: "" },
+      { title: "All Students", url: RoutesEnum.STUDENT },
     ],
   },
   {
     title: "Teachers",
     icon: "PeopleFill",
-    url: "",
+    url: "/",
     subLink: [
       { title: "All Teachers", url: "" },
       { title: "Teachers Details", url: "" },
@@ -36,20 +34,20 @@ const LILists = [
   {
     title: "Parents",
     icon: "PersonCircle",
-    url: "",
+    url: "/",
     subLink: [
       { title: "All Parents", url: "" },
       { title: "Parents Details", url: "" },
       { title: "Add Parents", url: "" },
     ],
   },
-  { title: "Users", icon: "PeopleFill", url: "", subLink: [] },
-  { title: "Subject", icon: "PeopleFill", url: "", subLink: [] },
-  { title: "Attendence", icon: "CardChecklist", url: "", subLink: [] },
-  { title: "Hostel", icon: "PeopleFill", url: "", subLink: [] },
-  { title: "Notice", icon: "ChatLeftTextFill", url: "", subLink: [] },
-  { title: "Transport", icon: "BusFrontFill", url: "", subLink: [] },
-  { title: "Logout", icon: "BoxArrowInRight", url: "", subLink: [] },
+  { title: "Users", icon: "PeopleFill", url: "/", subLink: [] },
+  { title: "Subject", icon: "PeopleFill", url: "/", subLink: [] },
+  { title: "Attendence", icon: "CardChecklist", url: "/", subLink: [] },
+  { title: "Hostel", icon: "PeopleFill", url: "/", subLink: [] },
+  { title: "Notice", icon: "ChatLeftTextFill", url: "/", subLink: [] },
+  { title: "Transport", icon: "BusFrontFill", url: "/", subLink: [] },
+  { title: "Logout", icon: "BoxArrowInRight", url: "/", subLink: [] },
 ];
 const AsideSidebar = () => {
   return (
@@ -88,12 +86,18 @@ const AsideSidebar = () => {
                         (item_subLink: any, index_subLink: number) => {
                           return (
                             <li key={index_subLink}>
-                              <a
+                              <Link
+                                href={item_subLink.url}
+                                className="flex items-center w-full p-2 text-sm text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                              >
+                                {item_subLink.title}
+                              </Link>
+                              {/* <a
                                 href="#"
                                 className="flex items-center w-full p-2 text-sm text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                               >
                                 {item_subLink.title}
-                              </a>
+                              </a> */}
                             </li>
                           );
                         }
@@ -101,8 +105,8 @@ const AsideSidebar = () => {
                     </ul>
                   </>
                 ) : (
-                  <a
-                    href="#"
+                  <Link
+                    href={item.url}
                     className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                   >
                     <Icon
@@ -111,12 +115,11 @@ const AsideSidebar = () => {
                       className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                     />
                     <span className="ms-3">{item.title}</span>
-                  </a>
+                  </Link>
                 )}
               </li>
             );
           })}
-         
         </ul>
       </div>
     </aside>

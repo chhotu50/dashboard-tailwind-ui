@@ -21,11 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopNavbar/>
-        <AsideSidebar/>
-        <div className="mt-16 mb-10">{children}</div>
-        </body>
-      <Script  src="/script.js"></Script>
+        {children}
+      </body>
     </html>
   );
 }
