@@ -2,12 +2,26 @@ import Breadcrumb from "@/components/breadcrumb";
 import { Button } from "@/components/button";
 import { Input } from "@/components/input";
 import { Label } from "@/components/label";
+import SelectOption from "@/components/select";
 import React from "react";
 const lists = [
   { title: "Student", url: "" },
   { title: "Create Student", url: "" },
 ];
 
+const GenderOptions = [
+  { value: "Male", label: "Male" },
+  { value: "Female", label: "Female" },
+  { value: "Other", label: "Other" },
+];
+const BloodGroupOptions = [
+  { value: "A+", label: "A+" },
+  { value: "A-", label: "A-" },
+  { value: "B+", label: "B+" },
+  { value: "B-", label: "B-" },
+  { value: "O+", label: "O+" },
+  { value: "O-", label: "O-" },
+];
 const AddStudent = () => {
   return (
     <div className="p-4 sm:ml-64">
@@ -20,15 +34,33 @@ const AddStudent = () => {
         <form>
           <div className="grid gap-6 mb-6 md:grid-cols-3">
             <div>
-              <Label>Unique visitors (per month)</Label>
-              <Input/>
+              <Label>Name</Label>
+              <Input />
             </div>
             <div>
-              <Label>Unique visitors (per month)</Label>
-              <Input/>
+              <Label>Email</Label>
+              <Input />
+            </div>
+            <div>
+              <Label>Phone</Label>
+              <Input />
+            </div>
+            <div>
+              <Label>Date of birth</Label>
+              <Input type="date" />
+            </div>
+            <div>
+              <Label>Gender</Label>
+              <SelectOption options={GenderOptions} placeholder="Select Genger"/>
+            </div>
+            <div>
+              <Label>Blood Group</Label>
+              <SelectOption options={BloodGroupOptions} placeholder="Select Blood group"/>
             </div>
           </div>
-          <Button className="text-white bg-blue-700 hover:bg-blue-800">Submit</Button>
+          <Button className="text-white bg-blue-700 hover:bg-blue-800">
+            Submit
+          </Button>
         </form>
       </div>
     </div>
