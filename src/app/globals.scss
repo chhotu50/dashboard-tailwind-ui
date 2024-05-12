@@ -32,7 +32,7 @@ body {
   }
 }
 
-.nav-position{
+.nav-position {
   position: absolute;
   inset: 0px 0px auto auto;
   margin: 0px;
@@ -49,6 +49,21 @@ body {
     transform: rotate(45deg);
     border-top: 1px solid #eaedf1;
     border-left: 1px solid #eaedf1;
-}
+  }
 }
 
+//home
+.card-color{
+  &.first-color{
+    background-color: #d1f3e0;
+  }
+  &.second-color{
+    background-color: #e1f1ff;
+  }
+  &.third-color{
+    background-color: #fff2d8;
+  }
+  &.forth-color{
+    background-color: #ffeaea;
+  }
+}

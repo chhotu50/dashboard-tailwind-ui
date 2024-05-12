@@ -59,7 +59,7 @@ const AsideSidebar = () => {
       aria-label="Sidebar"
     >
       <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-        <ul className="space-y-2 font-medium mb-16 mt-3">
+        <ul className="space-y-2 font-medium mb-16 mt-3 text-sm">
           {LILists.map((item: any, index: number) => {
             return (
               <li key={index}>
@@ -67,7 +67,7 @@ const AsideSidebar = () => {
                   <>
                     <button
                       type="button"
-                      className="child-dropdown flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      className="child-dropdown flex items-center w-full p-2 text-sm text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                     >
                       <Icon
                         iconName={item.icon}
@@ -90,7 +90,7 @@ const AsideSidebar = () => {
                             <li key={index_subLink}>
                               <a
                                 href="#"
-                                className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                className="flex items-center w-full p-2 text-sm text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                               >
                                 {item_subLink.title}
                               </a>

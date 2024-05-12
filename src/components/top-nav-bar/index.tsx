@@ -35,7 +35,7 @@ const TopNavbar = () => {
                 className="h-8 me-3"
                 alt="FlowBite Logo"
               />
-              <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
+              <span className="self-center text-base font-semibold  whitespace-nowrap dark:text-white">
                 Admin Template
               </span>
             </a>
