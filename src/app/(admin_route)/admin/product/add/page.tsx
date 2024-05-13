@@ -13,7 +13,7 @@ const AddProduct = () => {
     <div>
       <Breadcrumb lists={lists} title="Product" />
       <div className="mt-5 p-5 bg-white shadow-lg rounded">
-        <h1 className="mb-4 text-3xl font-medium leading-none tracking-tight text-gray-600 md:text-5xl lg:text-2xl dark:text-gray-600">
+        <h1 className="mb-4 font-medium leading-none tracking-tight text-gray-600 md:text-3xl lg:text-2xl dark:text-gray-600">
           Add New Product
         </h1>
         <form>
