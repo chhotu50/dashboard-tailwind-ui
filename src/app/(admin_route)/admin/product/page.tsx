@@ -18,7 +18,7 @@ const Product = () => {
       <Breadcrumb lists={lists} title="Products" />
       <div className="mt-5 p-5 bg-white shadow-lg rounded">
         <div className="flex justify-between">
-          <h1 className="mb-4 font-medium leading-none tracking-tight text-gray-600 md:text-3xl lg:text-2xl dark:text-gray-600">
+          <h1 className="mb-4 font-bold leading-none tracking-tight text-gray-600 md:text-3xl lg:text-2xl dark:text-gray-600">
             Products Lists
           </h1>
           <Link
