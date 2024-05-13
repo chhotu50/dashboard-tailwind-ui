@@ -12,7 +12,7 @@ export default function Admin() {
             <p className="font-normal mt-2 text-gray-300 dark:text-gray-400">
               Student
             </p>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-400">
               2021
             </h5>
           </div>
@@ -25,7 +25,7 @@ export default function Admin() {
             <p className="font-normal mt-2 text-gray-300 dark:text-gray-400">
               Teachers
             </p>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-600">
               2021
             </h5>
           </div>
@@ -38,7 +38,7 @@ export default function Admin() {
             <p className="font-normal mt-2 text-gray-300 dark:text-gray-400">
               Parents
             </p>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-600">
               2021
             </h5>
           </div>
@@ -51,7 +51,7 @@ export default function Admin() {
             <p className="font-normal mt-2 text-gray-300 dark:text-gray-400">
               Earnings
             </p>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-600">
               2021
             </h5>
           </div>
